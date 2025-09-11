@@ -71,7 +71,7 @@ export default function CountdownPage() {
   ];
 
   return (
-    <main className="flex flex-col items-center justify-center text-center min-h-screen sm:font-xs bg-gradient-to-br from-[#00AB45] via-gray-900 to-[#488D17] text-white px-4 mt-6">
+    <main className="flex flex-col items-center justify-center text-center min-h-screen sm:font-xs bg-gradient-to-br from-[#00AB45] via-gray-900 to-[#488D17] text-white px-4 mt-1">
       <motion.h1
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -114,7 +114,7 @@ export default function CountdownPage() {
       >
         <form
           onSubmit={handleSubscribe}
-          className="flex flex-row items-center gap-3 w-full"
+          className="flex flex-row items-center gap-2 w-full max-w-sm mx-auto"
         >
           <input
             type="email"
@@ -122,11 +122,11 @@ export default function CountdownPage() {
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="flex-1 px-4 py-3 rounded-xl bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="flex-1 px-4 py-3 rounded-xl bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 min-w-0"
           />
           <button
             type="submit"
-            className="px-6 py-3 rounded-xl bg-[#00AD45] hover:bg-[#488D17] transition font-semibold shadow-md"
+            className="px-3 py-2 rounded-xl bg-[#00AD45] hover:bg-[#488D17] transition font-semibold shadow-md text-sm whitespace-nowrap"
           >
             Notify Me
           </button>
