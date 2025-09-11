@@ -11,7 +11,7 @@ export async function middleware(req) {
 
   // Countdown protection
   if (url.pathname === "/" && now < COUNTDOWN_END) {
-    return NextResponse.redirect(new URL("/home", req.url));
+    return NextResponse.redirect(new URL("/dashboard", req.url));
   }
 
   return NextResponse.next();
