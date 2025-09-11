@@ -76,7 +76,7 @@ export default function Header() {
               {/* Drawer Header */}
               <div className="flex justify-between items-center mb-8">
                 <X
-                  className="w-6 h-6 cursor-pointer"
+                  className="w-6 h-6 cursor-pointer text-black"
                   onClick={() => setIsOpen(false)}
                 />
               </div>
@@ -96,7 +96,7 @@ export default function Header() {
 
                 {/* Search Icon */}
                 <div className="mt-6">
-                  <Search className="w-6 h-6 cursor-pointer hover:text-green-600" />
+                  <Search className="w-6 h-6 cursor-pointer hover:text-green-600 text-black" />
                 </div>
               </div>
             </motion.div>
