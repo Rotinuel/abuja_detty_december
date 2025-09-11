@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Bell, ShoppingCart, User, Search, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const navItems = [
   { label: "Events", href: "/events" },
@@ -22,7 +23,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
         
         {/* Logo */}
-        <div className="text-2xl font-bold text-green-600">Logo</div>
+        <Image src="/add.jpg" alt="" width="64" height="32" />
 
         {/* Desktop Nav */}
         <div className="hidden md:flex space-x-6 items-center text-black">
