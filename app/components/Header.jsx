@@ -74,7 +74,6 @@ export default function Header() {
             >
               {/* Drawer Header */}
               <div className="flex justify-between items-center mb-8">
-                <div className="text-2xl font-bold text-green-600">Menu</div>
                 <X
                   className="w-6 h-6 cursor-pointer"
                   onClick={() => setIsOpen(false)}
@@ -82,7 +81,7 @@ export default function Header() {
               </div>
 
               {/* Nav Links */}
-              <div className="flex flex-col space-y-6">
+              <div className="flex flex-col space-y-6 text-black">
                 {navItems.map((item) => (
                   <Link
                     key={item.href}
