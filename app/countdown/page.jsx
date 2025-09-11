@@ -81,17 +81,17 @@ export default function CountdownPage() {
         Countdown to Abuja Detty December Launch
       </motion.h1>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+      <div className="grid grid-cols-4 gap-6 text-center">
         {timeUnits.map((unit) => (
           <div key={unit.label} className="flex flex-col items-center">
-            <div className="relative w-20 h-28 bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex items-center justify-center">
+            <div className="relative w-16 h-24 bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex items-center justify-center">
               <AnimatePresence mode="popLayout">
                 <motion.span
                   key={unit.value}
                   initial={{ rotateX: 90, opacity: 0 }}
                   animate={{ rotateX: 0, opacity: 1 }}
                   exit={{ rotateX: -90, opacity: 0 }}
-                  transition={{ duration: 0.6 }}
+                  transition={{ duration: 0.5 }}
                   className="text-4xl font-bold"
                 >
                   {unit.value}
@@ -114,7 +114,7 @@ export default function CountdownPage() {
       >
         <form
           onSubmit={handleSubscribe}
-          className="flex flex-col sm:flex-row items-center gap-3"
+          className="flex flex-row items-center gap-3 w-full"
         >
           <input
             type="email"
