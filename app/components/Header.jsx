@@ -71,7 +71,7 @@ export default function Header() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3 }}
-              className="fixed top-0 right-0 w-3/4 max-w-sm h-full bg-white shadow-lg z-50 p-8"
+              className="fixed top-0 right-0 w-3/4 max-w-sm h-full bg-[#00ab45] shadow-lg z-50 p-8"
             >
               {/* Drawer Header */}
               <div className="flex justify-between items-center mb-8">
