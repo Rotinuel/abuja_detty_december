@@ -54,7 +54,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/events/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]
