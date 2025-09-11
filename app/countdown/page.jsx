@@ -71,7 +71,7 @@ export default function CountdownPage() {
   ];
 
   return (
-    <main className="flex flex-col items-center justify-center text-center min-h-screen sm:font-xs bg-gradient-to-br from-[#00AB45] via-gray-900 to-[#488D17] text-white px-4">
+    <main className="flex flex-col items-center justify-center text-center min-h-screen sm:font-xs bg-gradient-to-br from-[#00AB45] via-gray-900 to-[#488D17] text-white px-4 mt-6">
       <motion.h1
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
