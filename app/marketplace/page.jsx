@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
-    <div>coming soon!!!</div>
-  )
-}
+    <div className="flex items-center justify-center min-h-screen bg-black text-white text-2xl font-bold">
+      coming soon!!!
+    </div>
+  );
+};
 
-export default page
+export default Page;
