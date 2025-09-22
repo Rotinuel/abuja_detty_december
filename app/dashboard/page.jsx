@@ -1,5 +1,5 @@
 export default function Main() {
   return (
-    <div>Hello december!</div>
+    <div className="min-h-screen bg-white">Hello december!</div>
   );
 }
